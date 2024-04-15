@@ -1,10 +1,13 @@
 import { Link } from "react-router-dom"
-
+import './styles.css'
 export const Home = () => {
     return (
         <>
             <h1>FrontEnd Web Development</h1>
-            <Link to="/data">Data</Link>
+            <div className="links">
+                <Link to="/data" className="linkEstilizado">Data</Link>
+                <Link to="/calculator"className="linkEstilizado">Calculator</Link>
+            </div>
         </>
     )
 }
