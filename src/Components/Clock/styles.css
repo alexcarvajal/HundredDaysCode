@@ -17,8 +17,10 @@
     -o-border-radius: 5px;
     margin: 0 auto;
     margin-top: 10%;
-    animation: pulse 2s infinite;
-    -webkit-animation: pulse 2s infinite;
+    border: 5px solid black;
+    /*Colorinicialdelborde*/animation: tic-tac 1s backwards infinite;
+    -webkit-animation: tic-tac 1s infinite ;
+    /*Prefijoparacompatibilidadconnavegadoresantiguos*/:;
 }
 
 #Fecha {
@@ -26,18 +28,7 @@
     font-size: 15px;
 }
 
-@keyframes pulse {
-
-    0%,
-    100% {
-        transform: scale(1);
-    }
-
-    50% {
-        transform: scale(1.05);
-        -webkit-transform: scale(1.05);
-        -moz-transform: scale(1.05);
-        -ms-transform: scale(1.05);
-        -o-transform: scale(1.05);
-    }
+@keyframes tic-tac {
+    0%{ border: 10px solid rgb(0, 0, 0); }
+    100% { border: 10px solid rgb(19, 88, 121); }
 }
