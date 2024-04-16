@@ -7,6 +7,8 @@ export const Home = () => {
             <div className="links">
                 <Link to="/data" className="linkEstilizado">Data</Link>
                 <Link to="/calculator"className="linkEstilizado">Calculator</Link>
+                <Link to="/list"className="linkEstilizado">List</Link>
+                <Link to="/clock"className="linkEstilizado">Clock</Link>
             </div>
         </>
     )
